@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+  <title>DecoSkin. Proteção que não esconde. Valoriza.</title>
+  <meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="apple-mobile-web-app-title" content="DecoSkin" />
+  <meta name="description" content="DecoSkin. Proteção que não esconde. Valoriza." />
+  <meta name="theme-color" content="#F7F2EE" />
+  <link rel="apple-touch-icon" href="/imgs/icon.png">
+  <link rel="shortcut icon" href="/imgs/icon.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="DS-style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="manifest" href="manifest.json" />
+  <script src="https://kit.fontawesome.com/53f27d6075.js"></script>
+  <!--Start of Zendesk Chat Script-->
+  <script type="text/javascript">
+  window.$zopim||(function(d,s){var z=$zopim=function(c){
+  z._.push(c)},$=z.s=
+  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+  $.src='https://v2.zopim.com/?qUgH4o4jYLeXG1gumtMB76JDp6IHeLU1';z.t=+new Date;$.
+  type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+  </script>
+  <!--End of Zendesk Chat Script-->
+</head>
+
+<body>
+<!--HEADER NAVBAR-->
+<header class="bgColor pt-3" role="banner">
+  <div class="container d-none d-md-block p-4">
+    <div class="row">
+      <div class="col-sm-12 col-md pb-5 pb-md-0 site-logo justify-content-center">
+        <div class="site-logo">
+          <a href="/">
+            <img src="./imgs/DS-logo-azul.png" style="width: 180px" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="search col-sm-12 col-md pb-5 pb-md-0 justify-content-center mx-auto pt-2">
+        <div class="row">
+          <!-- <form action="" class="searchStyle col-10">
+            <input type="text" class="form-control form-control-sm" placeholder="Pesquisar no site" />
+          </form>
+          <button type="button" class="btn col-2">
+            <span class="icon fas fa-search textBlue"></span>
+          </button> -->
+          <vtex.cmc:fullTextSearchBox />
+          <!--CONTROLE VTEX SEARCH BOX-->
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md">
+        <div class="row d-flex flex-row justify-content-center justify-content-md-end my-flex-container mx-auto pt-2">
+          <div class="my-flex-item">
+            <a href="/account" title="Fazer Login" class="btn btn-default btn-login">
+              <i class="icon far fa-user hidden-lg hidden-md"></i>
+              <span class="visible-lg visible-md"></span>
+            </a>
+          </div>
+          <!-- <div class="my-flex-item">
+            <a href="/account/orders" title="Meus Pedidos" class="btn btn-default btn-orders">
+              <i class="fa fa-list-alt hidden-md hidden-lg"></i>
+              <span class="visible-lg visible-md"></span>
+            </a>
+          </div> -->
+          <div class="my-flex-item">
+              <div class="mini-cart col-mini-cart">
+                <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default btn-block btn-mini-cart">
+                  <i class="icon fa fa-shopping-cart"></i>
+                  <span class="count mini-cart-qty-admake">0</span>
+                </a>
+                <div id="mini-cart-admake-aux col-mini-cart" class="hidden">
+                                      <vtex.cmc:miniCart />
+                                      <vtex.cmc:AmountItemsInCart />    
+                </div><!-- #mini-cart-admake-aux -->
+                <div id="mini-cart-admake" style="display: none;">
+                <div class="mini-cart-header">
+                </div>
+                <div class="mini-cart-itens"><!-- recebe itens --></div>
+                <div class="mini-cart-footer">
+                <div class="mini-cart-totais"><strong id="mini-cart-admake-total" class="pull-right"><!-- recebe valor total -->
+                  </strong><span>Total</span></div>
+                <div class="mini-cart-botao">
+                <a href="/checkout/#/cart" class="btn btn-block btn-verde btn-finalizar-compra">Fechar Pedido</a>
+                </div>
+                </div>
+                </div>
+              </div><!-- .mini-cart -->
+          </div>
+          <div class="my-flex-item">
+            <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default btn-block iconCart">
+              <i class="icon fa fa-shopping-cart"></i>
+              <span class="count">0</span>
+              <vtex.cmc:miniCart/>
+              <vtex.cmc:AmountItemsInCart/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-none d-md-block">
+      <hr class="mb-0" />
+  </div>
+  <!--NAVBAR-->
+  <div class="container bgColor">
+    <nav class="navbar navbar-expand-md navbar-light bgColor">
+      <a class="navbar-brand" href="#">
+        <img src="./imgs/DS-logo-azul.png" style="width: 180px" alt="" class="d-md-none" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="mx-auto">
+          <ul class="navbar-nav">
+
+            <li class="nav-item pt-5 pt-md-0 d-md-none">
+              <a class="nav-link" href="/account">Fazer login</a>
+            </li>
+            <li class="nav-item pt-2 pt-md-0 d-md-none">
+              <a class="nav-link" href="/account/orders">Meus pedidos</a>
+            </li>
+            <li class="nav-item pt-2 pt-md-0 d-md-none">
+              <a class="nav-link" href="/checkout/#/cart">Carrinho de compras</a>
+            </li>
+            <li class="nav-item dropdown pt-2 pt-md-0">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Capas
+              </a>
+              
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Silicone Simples</a>
+                <a class="dropdown-item" href="#">Bumper</a>
+                <a class="dropdown-item" href="#">Anti Impacto 01</a>
+                <a class="dropdown-item" href="#">USH</a>
+                <a class="dropdown-item" href="#">Anti Impacto III</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown pt-2 pt-md-0">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Películas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Vidro</a>
+                <a class="dropdown-item" href="#">Poliuretano</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown pt-2 pt-md-0">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Acessórios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Geonav</a>
+                <a class="dropdown-item" href="#">Rock Space</a>
+                <a class="dropdown-item" href="#">Awey</a>
+                <a class="dropdown-item" href="#">Energy2U</a>
+                <a class="dropdown-item" href="#">Baseus</a>
+                <a class="dropdown-item" href="#">Cellution</a>
+                <a class="dropdown-item" href="#">Iwill</a>
+              </div>
+            </li>
+            <li class="nav-item pt-2 pt-md-0">
+              <a class="nav-link" href="/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <div class="search col-sm-12 col-md pb-5 pb-md-0 justify-content-center mx-auto p-5 d-md-none">
+    <div class="row justify-content-center mx-auto">
+      <!-- <form action="" class="searchStyle col-10">
+        <input type="text" class="form-control form-control-sm" placeholder="Pesquisar no site" />
+      </form>
+      <button type="button" class="btn col-2">
+        <span class="icon fas fa-search textBlue"></span>
+      </button> -->
+      <vtex.cmc:fullTextSearchBox />
+      <!--CONTROLE VTEX SEARCH BOX-->
+    </div>
+  </div>
+
+</header>
+
+<!--CAROUSEL-->
+<div class="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./imgs/1.png" alt="1 slide" />
+        <div class="carousel-caption pb-0 pb-md-5">
+          <h2 class="text-right">DecoSkin</h2>
+          <p class="text-right pb-0 pb-md-5 mb-0">Proteção que conecta seu estilo!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./imgs/2.png" alt="2 slide" />
+        <div class="carousel-caption pb-0 pb-md-5">
+          <h2 class="text-left">Coleção <br />Anti-impacto</h2>
+          <p class="text-left pb-0 pb-md-5 mb-0">Dupla proteção para o seu aparelho.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./imgs/3.png" alt="3 slide" />
+        <div class="carousel-caption pb-0 pb-md-5">
+          <h2 class="text-right">Frete grátis?</h2>
+          <p class="text-right pb-0 pb-md-5 mb-0">Eu ouvi frete grátis?</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./imgs/4.png" alt="4 slide" />
+        <div class="carousel-caption pb-0 pb-md-5">
+          <h2 class="text-right">Coleção USH</h2>
+          <p class="text-right pb-0 pb-md-5 mb-0">Produtos Swarovski pra você brilhar de verdade. <br /> Revendedor exclusivo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./imgs/5.png" alt="5slide" />
+        <div class="carousel-caption pb-0 pb-md-5">
+          <h2 class="text-left">Acessórios</h2>
+          <p class="text-left pb-0 pb-md-5 mb-0">Turbine seu celular! <br />
+            Acessórios para deixar seu aparelho ainda mais funcional!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./imgs/6.png" alt="6 slide" />
+        <div class="carousel-caption pb-0 pb-md-5">
+          <h2 class="text-right">Tech!</h2>
+          <p class="text-right pb-0 pb-md-5 mb-0">Escolha o acessório de áudio ou <br /> vídeo que completa sua experiência.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./imgs/7.png" alt="7 slide" />
+        <div class="carousel-caption pb-0 pb-md-5">
+          <h2 class="text-right">DecoSkin</h2>
+          <p class="text-right pb-0 pb-md-5 mb-0">Proteção que conecta seu estilho!</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!--PRIMEIRO DESTAQUE ESQUERDA-->
+<div class="p-5">
+  <div class="container">
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-12 text-center pt-4">
+      <h2 class="textOrange">Mais vendidos</h2>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-md-12 col-lg-7 mb-5">
+      <a href="/produto.html">
+        <img src="./imgs/banner-frete-gratis.png" alt="Image placeholder"
+          class="img-fluid rounded w-75 mx-auto d-block" />
+      </a>
+    </div>
+    <div class="col-md-12 col-lg-5 pl-md-5 text-center text-lg-left ">
+      <h2 class="textBlue fontSize26">Coleção capas de TPU</h2>
+      <p class="textGray">Capa não pode ser qualquer coisa. As nossas são feitas com poliuretano (TPU), material
+        maleável e muito
+        resistente, deixando seu aparelho mega protegido.
+      </p>
+      <div class="text-center">
+        <a href="produto.html">
+          <button type="button" class="btn btn-default float-lg-left btn-sm btnOrange">COMPRE AGORA</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--SEGUNDO DESTAQUE DIREITA-->
+<div class="p-5">
+  <div class="container">
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-12 text-center pt-4">
+      <h2 class="textOrange greenLine pt-5">Acabou de chegar</h2>
+    </div>
+  </div>
+  <div class="row align-items-center flex-column-reverse flex-lg-row">
+    <div class="col-md-12 col-lg-5 pl-md-5 text-center text-lg-right">
+      <h2 class="textBlue fontSize26">Coleção USH</h2>
+      <p class="textGray">Nossos produtos são os únicos feitos com cristais Swarovski originais, aplicados
+        manualmente um a um, com
+        todo cuidado e carinho. Garantindo um acabamento impecável!
+        Essa garantia e qualidade você só encontra com quem é revendedor exclusivo Swarovski.
+      </p>
+      <div class="text-center">
+        <a href="produto.html">
+          <button type="button" class="btn btn-default float-lg-right btn-sm btnOrange">COMPRE AGORA</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-7 mb-5">
+      <a href="produto.html">
+        <img src="./imgs/USH-mandalas.jpg" alt="Image placeholder"
+          class="img-fluid rounded w-75 mx-auto d-block" /></a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<hr />
+
+<!--CERTIFICADO, FOCO, EXPERIENCIA-->
+<div class="p-5">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-4 d-lg-flex mb-5 pt-5 mb-md-0 pt-md-0">
+        <div class="text">
+          <span class="icon far fa-gem iconStyle d-flex justify-content-center pb-4"></span>
+          <h2 class="text-center textBlue fontSize26">Certificação Swarovski</h2>
+          <p class="text-center textGray">Somos a única marca do segmento homologada pela Swarovski para utilizar
+            cristais originais na criação dos produtos.</p>
+        </div>
+    </div>
+    <div class="col-md-12 col-lg-4 d-lg-flex mb-5 pt-5 mb-md-0 pt-md-0">
+        <div class="text">
+          <span class="icon fas fa-globe iconStyle d-flex justify-content-center pb-4"></span>
+          <h2 class="text-center textBlue fontSize26">Foco em conectividade</h2>
+          <p class="text-center textGray">A Deco Skin está focada em oferecer soluções para facilitar seu dia a
+            dia e te conectar com o mundo.</p>
+        </div>
+    </div>
+    <div class="col-md-12 col-lg-4 d-lg-flex mb-5 pt-5 mb-md-0 pt-md-0">
+        <div class="text">
+          <span class="icon far fa-grin-stars iconStyle d-flex justify-content-center pb-4"></span>
+          <h2 class="text-center textBlue fontSize26">Experiência garantida</h2>
+          <p class="text-center textGray">Desde 2011 criamos soluções inovadoras para quem busca acessórios de
+            tecnologia. São 08 anos de história e mais de 50 lojas espalhadas pelo Brasil.</p>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<hr />
+ 
+<!--INSTAFEED-->
+<div class="p-5">
+  <h1 id="insta-text" class="text-center">Instafeed</h1>
+  <div class="container">
+  <div class="row">
+    <div id="instafeed">
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--FIRST FORM NEWSLETTER-->
+<!-- <div class="d-flex justify-content-center" id="formColor">
+    <form action="">
+      <h2 class="formTextNews text-center pb-3 pt-5">Fique por dentro das nossas novidades</h2>
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
+        </div>
+        <div class="form-group col-md-4">
+          <button type="button" class="btn btnOrange col-xs-8 col-md-12 col-form-label">Cadastrar</button>
+        </div>
+      </div>
+      <p class="usoStyle text-center pt-3 pb-5">Ao clicar em Cadastrar, você estará aceitando automaticamente nossos <a
+        href="#" data-toggle="modal" data-target="#bannermodalTermos" class="smoothscroll">Termos de
+        Uso</a>.</p>
+    </form>
+</div> -->
+
+<!--FORM NEWSLETTER RDSM-->
+<div role="main" id="teste-newsletter-bb8489354752dca8b3b3"></div>
+<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+<script type="text/javascript">
+  new RDStationForms('teste-newsletter-bb8489354752dca8b3b3-html', 'UA-145477607-1').createForm();
+</script>
+<div class="pb-3 cardGreen">
+  <p class="text-center px-5 usoStyle">
+    Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.
+  </p>
+</div>
+
+<!--FOOTER-->
+<div class="p-5 fooStyle">
+  <div class="container px-5">
+    <img src="imgs/DS-logo-branco.png" style="width: 100px" alt="" class="pb-4" />
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <ul class="list-unstyled">
+          <li><a href="/about.html">Quem somos</a></li>
+          <li><a href="/about.html">Nossas lojas</a></li>
+          <li><a href="#">Trabalhe conosco</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <ul class="list-unstyled">
+          <li><a href="/contato.html">Fale conosco</a></li>
+          <li><a href="/suporte.html">Dúvidas frequentes</a></li>
+          <li><a href="#">Seja um franqueado</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" data-toggle="modal" data-target="#bannermodalTermos" class="smoothscroll">Termos de
+            uso
+          </a>
+          <div class="modal fade" id="bannermodalTermos" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Termos de uso</h5>
+              </div>
+              <div class="modal-body">
+                  A DECO SKIN realiza venda de produtos e serviços pela internet e considerando o
+                  interesse do Cliente na compra dos produtos oferecidos pela DECO SKIN
+                  ("Produtos") em seus canais de venda, o presente contrato tem por finalidade
+                  estabelecer as condições gerais de uso e compra de produtos e serviços do cliente
+                  do site DECO SKIN.
+                  <br />
+                  <br />
+                  I. Confidencialidade: é de responsabilidade da DECO SKIN a preservação da
+                  confidencialidade de todos os dados e informações fornecidos pelo Cliente no
+                  processo de compra.
+                  <br />
+                  <br />
+                  II. Serviço de Atendimento ao Cliente (SAC): O cliente dispõe desse serviço para
+                  sanar suas dúvidas, solucionar eventuais solicitações ou reclamações a respeito do
+                  seu pedido ou de qualquer conteúdo disponibilizado no site. O SAC poderá ser
+                  acionado por meio de telefone ou de formulário do site.
+                  <br />
+                  <br />
+                  III. Política de entrega: o prazo para entrega dos Produtos é informado durante o
+                  procedimento de compra, contabilizado em dias úteis. As entregas dos Produtos
+                  são realizadas de segunda a sexta-feira, das 8h às 18h. Excepcionalmente, algumas
+                  entregas de Produtos podem ocorrer aos sábados, domingos e feriados.
+                  <br />
+                  <br />
+                  III.I - A conferência da adequação das dimensões do produto é de responsabilidade
+                  do Cliente, que deverá se assegurar de que estas estão de acordo com os limites
+                  espaciais dos elevadores, portas e corredores do local da entrega. Não será
+                  realizada a montagem ou desmontagem do produto, transporte pela escada e/ou
+                  portas e janelas, ou içamento das entregas.
+                  <br />
+                  <br />
+                  III.II - Serão realizadas até três tentativas de entrega no local informado, em dias
+                  alternados, com intervalo de até 48h entre uma entrega e outra. É indispensável que,
+                  no endereço solicitado, haja uma pessoa autorizada pelo comprador, maior de 18
+                  anos, e portando documento de identificação para receber a mercadoria e assinar o
+                  protocolo de entrega. Se houver três tentativas de entrega sem sucesso, o pedido
+                  retornará para o Centro de Distribuição da DECO SKIN.
+                  <br />
+                  <br />
+                  III.III - Após a finalização do pedido não é possível alterar a forma de pagamento
+                  e/ou endereço de entrega, solicitar adiantamento ou, ainda, prioridade da entrega.
+                  <br />
+                  <br />
+                  III.IV - O prazo de entrega informado durante o procedimento de compra do Produto
+                  leva em consideração o estoque, a região, o processo de emissão da nota fiscal e o
+                  tempo de preparo do produto. A cada atualização no status de entrega do pedido, o
+                  sistema da DECO SKIN envia, automaticamente, e-mails de alerta para o Cliente.
+                  <br />
+                  <br />
+                  III.V - O valor do frete da entrega é calculado com base no local de entrega, peso e
+                  dimensões do Produto.
+                  <br />
+                  <br />
+                  III.VI - A DECO SKIN não autoriza a transportadora a: entrar no domicílio; entregar
+                  por meios alternativos (exemplo: içar produto por janela); realizar instalação ou
+                  manutenção de produtos; abrir a embalagem do produto; realizar entrega em
+                  endereço diferente do que consta no DANFE; realizar entrega a menor de idade ou
+                  sem documento de identificação.
+                  <br />
+                  <br />
+                  III.VII - A DECO SKIN não se responsabiliza pela retenção de mercadorias na SEFAZ
+                  quando esta se dever exclusivamente a pendências do cliente, sendo, portanto,
+                  necessário seu comparecimento no posto fiscal para que a mercadoria seja
+                  liberada, tendo em vista que nestes casos as informações referentes a liberações e
+                  pagamentos só são passadas aos interessados.
+                  <br />
+                  <br />
+                  IV. Direito de arrependimento: ao Cliente será facultado o exercício do direito de
+                  arrependimento da compra, com a finalidade de devolução do Produto, hipótese na
+                  qual deverão ser observadas as seguintes condições: o prazo de desistência da
+                  compra do produto é de até 7 (sete) dias corridos, a contar da data do recebimento;
+                  em caso de devolução, o produto deverá ser devolvido à DECO SKIN na embalagem
+                  original, acompanhado do DANFE (Documento Auxiliar da Nota Fiscal Eletrônica), do
+                  manual e de todos os seus acessórios.
+                  <br />
+                  <br />
+                  IV.I - O Cliente deverá solicitar a devolução através do Serviço de Atendimento ao
+                  Cliente (SAC) ou diretamente no Painel de Controle, no tópico "cancelar pedido". As
+                  despesas decorrentes de coleta ou postagem do Produto serão custeadas pela
+                  DECO SKIN.
+                  <br />
+                  <br />
+                  IV.II - Após a chegada do produto ao Centro de Distribuição, a DECO SKIN verificará
+                  se as condições supra citadas foram atendidas. Em caso afirmativo, providenciará a
+                  restituição no valor total da compra.
+                  <br />
+                  <br />
+                  IV.III - Em compras com cartão de crédito a administradora do cartão será notificada
+                  e o estorno ocorrerá na fatura seguinte ou na posterior, de uma só vez, seja qual for
+                  o número de parcelas utilizado na compra. O prazo de ressarcimento e, ainda, a
+                  cobrança das parcelas remanescentes após o estorno integral do valor do Produto
+                  no cartão de crédito do Cliente realizado pela DECO SKIN, é de responsabilidade da
+                  administradora do cartão. Na hipótese de cobrança de parcelas futuras pela
+                  administradora do cartão, o Cliente não será onerado, vez que a DECO SKIN,
+                  conforme mencionado acima, realiza o estorno do valor integral do Produto em uma
+                  única vez, sendo o crédito referente ao estorno concedido integralmente pela
+                  administradora do cartão na fatura de cobrança subsequente ao mês do
+                  cancelamento.
+                  <br />
+                  <br />
+                  IV.IV - Em compras pagas com boleto bancário ou débito em conta, a restituição
+                  será efetuada por meio de depósito bancário, em até 10 (dez) dias úteis, somente na
+                  conta corrente do(a) comprador(a), que deve ser individual. É necessário que o CPF
+                  do titular da conta corrente.
+              </div>
+            </div>
+          </div>
+          </div>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#bannermodalPoli" class="smoothscroll">Políticas de
+              privacidade
+            </a>
+            <div class="modal fade" id="bannermodalPoli" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Política de Privacidade</h5>
+                  </div>
+                  <div class="modal-body">
+                    SEÇÃO 1 - O QUE FAREMOS COM SEUS DADOS?
+                    Quando você realiza alguma transação com nossa loja “on-line”, como parte do
+                    processo de compra e venda, coletamos as informações pessoais que você nos dá
+                    tais como: nome, e-mail e endereço.
+                    Quando você acessa nosso site, também recebemos automaticamente o protocolo
+                    de internet do seu computador, endereço de IP, a fim de obter informações que nos
+                    ajudam a aprender sobre seu navegador e sistema operacional.
+                    Email Marketing será realizado apenas caso você permita. Nestes emails você
+                    poderá receber notícia sobre nossa loja, novos produtos e outras atualizações.
+                    <br />
+                    <br />
+                    SEÇÃO 2 - CONSENTIMENTO
+                    Quando você fornece informações pessoais como nome, telefone e endereço para
+                    completar uma transação em nosso site, verificar seu cartão de crédito, fazer um
+                    pedido, providenciar uma entrega ou retornar uma compra, entendemos que você
+                    está de acordo com a coleta de dados para serem utilizados pela nossa empresa.
+                    Se pedimos por suas informações pessoais por uma razão secundária, como
+                    marketing, vamos lhe pedir diretamente por seu consentimento, ou lhe fornecer a
+                    oportunidade de dizer não.
+                    E caso você queira retirar seu consentimento, como proceder?
+                    Se após você nos fornecer seus dados, você mudar de ideia, você pode retirar o seu
+                    consentimento para que possamos entrar em contato, para a coleção de dados
+                    contínua, uso ou divulgação de suas informações, a qualquer momento, entrando
+                    em contato conosco em online@decoskin.com ou nos enviando uma
+                    correspondência para Rua Conde Prates, 476, Moóca, Sāo Paulo / SP.
+                    <br />
+                    <br />
+                    SEÇÃO 3 - DIVULGAÇÃO
+                    Podemos divulgar suas informações pessoais caso sejamos obrigados pela lei para
+                    fazê-lo ou se você violar nossos Termos de Serviço.
+                    <br />
+                    <br />
+                    SEÇÃO 4 - SERVIÇOS DE TERCEIROS
+                    No geral, os fornecedores terceirizados usados por nós irão apenas coletar, usar e
+                    divulgar suas informações na medida do necessário para permitir que eles realizem
+                    os serviços que eles nos fornecem.
+                    Entretanto, certos fornecedores de serviços terceirizados, tais como gateways de
+                    pagamento e outros processadores de transação de pagamento, têm suas próprias
+                    políticas de privacidade com respeito à informação que somos obrigados a fornecer
+                    para eles de suas transações relacionadas com compras.
+                    Para esses fornecedores, recomendamos que você leia suas políticas de
+                    privacidade para que você possa entender a maneira na qual suas informações
+                    pessoais serão usadas por esses fornecedores.
+                    Em particular, lembre-se que certos fornecedores podem ser localizados em ou
+                    possuir instalações que são localizadas em jurisdições diferentes que você ou nós.
+                    Assim, se você quer continuar com uma transação que envolve os serviços de um
+                    fornecedor de serviço terceirizado, então suas informações podem tornar-se
+                    sujeitas às leis da(s) jurisdição(ões) nas quais o fornecedor de serviço ou suas
+                    instalações estão localizados.
+                    Como um exemplo, se você está localizado no Canadá e sua transação é
+                    processada por um gateway de pagamento localizado nos Estados Unidos, então
+                    suas informações pessoais usadas para completar aquela transação podem estar
+                    sujeitas a divulgação sob a legislação dos Estados Unidos, incluindo o Ato Patriota.
+                    Uma vez que você deixe o site da nossa loja ou seja redirecionado para um
+                    aplicativo ou site de terceiros, você não será mais regido por essa Política de
+                    Privacidade ou pelos Termos de Serviço do nosso site.
+                    Links.
+                    Quando você clica em links na nossa loja, eles podem lhe direcionar para fora do
+                    nosso site. Não somos responsáveis pelas práticas de privacidade de outros sites e
+                    lhe incentivamos a ler as declarações de privacidade deles.
+                    <br />
+                    <br />
+                    SEÇÃO 5 - SEGURANÇA
+                    Para proteger suas informações pessoais, tomamos precauções razoáveis e
+                    seguimos as melhores práticas da indústria para nos certificar que elas não serão
+                    perdidas inadequadamente, usurpadas, acessadas, divulgadas, alteradas ou
+                    destruídas.
+                    Se você nos fornecer as suas informações de cartão de crédito, essa informação é
+                    criptografada usando tecnologia "secure socket layer" (SSL) e armazenada com uma criptografia AES-256. Embora nenhum método de transmissão pela Internet ou armazenamento eletrônico é 100% seguro, nós seguimos todos os requisitos da PCI-
+                    DSS e implementamos padrões adicionais geralmente aceitos pela indústria.
+                    <br />
+                    <br />
+                    SEÇÃO 6 - ALTERAÇÕES PARA ESSA POLÍTICA DE PRIVACIDADE
+                    Reservamos o direito de modificar essa política de privacidade a qualquer momento,
+                    então por favor, revise-a com frequência. Alterações e esclarecimentos vão surtir
+                    efeito imediatamente após sua publicação no site. Se fizermos alterações de
+                    materiais para essa política, iremos notificá-lo aqui que eles foram atualizados, para
+                    que você tenha ciência sobre quais informações coletamos, como as usamos, e sob
+                    que circunstâncias, se alguma, usamos e/ou divulgamos elas.
+                    Se nossa loja for adquirida ou fundida com outra empresa, suas informações podem
+                    ser transferidas para os novos proprietários para que possamos continuar a vender
+                    produtos para você.       
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <ul class="list-unstyled">
+          <li><a href="https://pt-br.facebook.com/decoskin/" target="_blank"><span class="fab fa-facebook-f"></span> DecoSkin</a></li>
+          <li><a href="https://twitter.com/deco_skin" target="_blank"><span class="fab fa-twitter"></span> DecoSkin</a></li>
+          <li><a href="https://www.instagram.com/decoskin" target="_blank"><span class="fab fa-instagram"></span> DecoSkin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="p-5 faixaFooterWhite">
+    <div class="container px-5">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <h5>Formas de pagamento:</h5>
+          </div>
+          <div class="row bandeiras-mobile">
+            <img src="./imgs/b1.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+            <img src="./imgs/b2.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+            <img src="./imgs/b3.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+            <img src="./imgs/b4.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+            <img src="./imgs/b5.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+            <img src="./imgs/b6.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+            <img src="./imgs/boleto.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+          </div>
+          <div class="row bandeiras-mobile">
+            <img src="./imgs/b7.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+            <img src="./imgs/b8.png" class="p-1" alt="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" title="Visa, MarsterCard, Diners, Amex, Hipercard ou Elo" />
+          </div>
+        </div>
+        <div class="col-6">
+            <h5>Segurança garantida:</h5>
+            <a href="http://secure.vtex.com/?an=accountName" target="_blank">
+              <img src="//io.vtex.com.br/front-libs/assets/pci/vtex-pci-100.png" alt="VTEX PCI Certified" />
+            </a>
+        </div>
+      </div>
+      <div class="row pt-5 mb-0 justify-content-center">
+        <p style="font-size: 12px;" class="text-center">© Deco Skin - 2019 - Todos os direitos reservados | BRAMPORT COMERCIO EIRELI | CNPJ: 07.647.102/000142 | R CONDE PRATES, 476 - Parque da Mooca - São Paulo SP</p>
+      </div>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="DS-script.js"></script>
+  <script type="text/javascript" src="instafeed.min.js"></script>
+</body>
+
+</html>
