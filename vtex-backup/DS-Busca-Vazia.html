@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<vtex:template id="DS-Sub-Head" />
+
+<body>
+    <vtex:template id="DS-Sub-Header" />
+    
+<div id="box-bread-brumb">
+<nav aria-label="breadcrumb" class="breadcrumbStyle">
+    <vtex.cmc:breadCrumb />
+</nav>
+</div>
+
+<section id="busca-vazia-content" class="p-5">
+    <div class="container">
+        <div class="row">
+                <article id="main-content">
+                                                                    
+                    <div class="title-category">
+                        <!--  Controle: Titulo -->
+                        <a href="#" class="pull-right" onclick="window.history.back();">
+                        <i class="fa fa-chevron-left"></i> Voltar</a> 
+                        <h2>Não encontramos nada relacionado a sua busca :/ </h2>
+                        <!-- /Controle: Titulo -->
+                    </div><!-- .title-category -->
+                            
+                    <div id="collections">
+            
+                        <div class="showcase-default showcase-owl">
+                            <vtex:contentPlaceHolder id="Destaques" />
+                        </div>
+                        
+                        <div class="showcase-default showcase-owl">
+                            <vtex:contentPlaceHolder id="Lançamentos" />   
+                        </div>
+            
+                    </div><!-- #collections -->
+                
+                </article><!-- #main-content -->
+            
+            </div><!-- .row -->
+    </div>
+</section><!-- #content -->
+
+<div class="p-5 search-navigator-style">
+    <div class="container">
+        <div class="row">
+            <vtex.cmc:searchNavigator/>
+        </div>
+    </div>
+</div>
+
+<div class="p-5 search-result-style">
+    <div class="container">
+        <div class="row">
+            <vtex.cmc:searchResult layout="48e223e6-da80-4610-b3d5-4e5cfaf94f13" itemCount="9" columnCount="3" />
+        </div>
+    </div>
+</div>
+  
+    <vtex:template id="DS-Sub-Footer" />
+</body>
+<vtex:template id="DS-Sub-Scripts" />
+</html>

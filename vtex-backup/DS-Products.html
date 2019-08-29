@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+  <title>DecoSkin. Proteção que não esconde. Valoriza.</title>
+  <meta charset="utf-8" />
+  <vtex:metaTags/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="/arquivos/icon.png" type="image/png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+  <link rel="stylesheet" href="/arquivos/DS-style.css?nocache=1.0.0" />
+  <link rel="manifest" href="/arquivos/manifest.json" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="/arquivos/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+  <link href="/arquivos/ion.rangeSlider.skinHTML5.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/53f27d6075.js" type="text/javascript"></script>
+  <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){
+    z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+    $.src='https://v2.zopim.com/?qUgH4o4jYLeXG1gumtMB76JDp6IHeLU1';z.t=+new Date;$.
+    type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+  <!--End of Zendesk Chat Script-->
+</head>
+
+<body>
+    <vtex:template id="DS-Sub-Header" />
+
+<div id="box-bread-brumb">
+<nav aria-label="breadcrumb" class="breadcrumbStyle">
+    <vtex.cmc:breadCrumb />
+</nav>
+</div>
+
+<section id="product-content p-5">
+  <div class="container">
+    <div class="row product-details">
+
+      <div class="product-name-mobile">
+        <div class="product-name">
+            <div id="brand"><vtex.cmc:brandName/></div>
+            <vtex.cmc:productName />
+        </div>
+        <div class="row">
+          <div class="codigo-produto">
+            <span>Cód:</span> <vtex.cmc:skuReference/>
+          </div>
+          <div class="col-xs-12">
+            <div class="avaliacoes"><a href="#reviews" class="link-ancora"><vtex.cmc:evaluationRate/></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-image text-center">
+      <!--  Component: Product Images -->
+      <vtex.cmc:ProductImage zoom="on"/>
+
+      <vtex.cmc:facebookLike />
+      </div><!-- .product-image -->
+
+      <div class="product-info">
+
+        <div class="product-name hidden-xs">
+          <div id="brand"><vtex.cmc:brandName/></div>
+            <h1>
+              <vtex.cmc:productName />
+            </h1>
+        </div>
+
+        <div class="row hidden-xs">
+          <div class="codigo-produto">
+            <span>Cód:</span> <vtex.cmc:skuReference/>
+          </div>
+          <div class="">
+            <div class="avaliacoes"><a href="#reviews" class="link-ancora"><vtex.cmc:evaluationRate/></a></div>
+          </div>
+        </div>
+
+        <div class="price-box">
+          <!--  Component: Sellers -->
+        <vtex.cmc:SellerOptions />
+
+        <!--  Component: Price -->
+        <vtex.cmc:skuPrice />
+      
+        <!--  Component: Sales channels -->
+        <vtex.cmc:SalesChannelDropList />
+      
+        <!--  Component: Addicional services -->
+        <vtex.cmc:stockKeepingUnitService />
+        
+        <!--  Component: Payment methods -->
+        <!-- <vtex.cmc:OtherPaymentMethod/> -->
+          </div><!-- .price-box -->
+
+          <div class="seletor-sku">
+        <vtex.cmc:stockKeepingUnitSelection />
+      </div><!-- .seletor-sku -->
+
+      <div class="buy-button-box">
+        <vtex.cmc:BuyButton />
+      </div><!-- .buy-button-box -->
+              
+        <div id="product-extra-details-1"></div>  
+
+      <div class="shipping-box">
+            <vtex.cmc:shippingValue />
+            <script type="text/javascript">
+              $(document).ready( function(){
+                ShippingValue();
+              });
+            </script>
+          </div>
+
+        <div id="product-extra-details-2"></div>  
+
+      </div><!-- .product-info -->
+
+    </div><!-- .product-details -->
+  </div>
+  <div class="container">
+  <div class="product-description">
+
+  <div class="btn-group hidden-xs" role="group" aria-label="menu-anchor">
+    <a href="#description" class="btn btn-default">Descrição do Produto</a>
+    <a href="#specification" class="btn btn-default">Especificações do Produto</a>
+    <a href="#reviews" class="btn btn-default">Avaliações</a>
+  </div>
+
+
+  <div id="product-extra-description-1"></div>  
+
+  <div class="product-description-box">
+    <!--  Component: Cross selling -->
+    <vtex.cmc:BuyTogether/>
+  </div>
+
+  <div id="product-extra-description-2"></div>  
+
+  <div class="product-description-box">
+      <div id="description">
+    <h2 class="title">Descrição do Produto</h2>
+    <!--  Component: Description -->
+    <vtex.cmc:ProductDescription />
+  </div><!-- .description -->
+  </div>
+
+  <div class="product-description-box">
+        <div id="specification">
+      <!--  Component: Specification -->
+      <vtex.cmc:productSpecification />
+    </div><!-- .description -->
+  </div>
+
+  <div class="product-description-box">
+    <div id="reviews" class="rating">
+      <vtex.cmc:UserReview/>
+    </div>
+  </div>
+
+  <div class="product-description-box">
+    <div class="showcase-default showcase-owl">
+      <vtex:contentPlaceHolder id="Quem-viu-viu-tambem" />
+    </div><!-- .showcase-default -->
+  </div>
+
+  <div class="product-description-box">
+    <div class="showcase-default showcase-owl">
+      <vtex:contentPlaceHolder id="Quem-viu-tambem-comprou" />
+    </div><!-- .showcase-default -->
+  </div>
+
+  <div class="product-description-box">
+    <div class="showcase-default showcase-owl">
+      <vtex:contentPlaceHolder id="Quem-comprou-tambem-comprou" />
+    </div><!-- .showcase-default -->
+  </div>
+  </div><!-- .product-description -->
+  </div>
+</section>
+
+<div id="comprar-flutuante p-5" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="visible-lg visible-md">
+          <img src="/arquivos/sem-foto.gif" alt="" id="foto-comprar-flutuante" class="img-responsive" />
+        </div>
+        <div class="">
+        <vtex.cmc:productName/>
+        </div>
+        <div class="col-precos">
+          <vtex.cmc:skuPrice/>
+        </div>
+        <div class="col-comprar">
+        <div class="buy-button-box">
+          <vtex.cmc:BuyButton />
+        </div><!-- .buy-button-box -->
+        </div>
+      </div>
+    </div>
+</div>
+
+    <vtex:template id="DS-Sub-Footer" />
+</body>
+<vtex:template id="DS-Sub-Scripts" />
+</html>
