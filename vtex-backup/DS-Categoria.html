@@ -36,22 +36,20 @@
 </nav>
 </div>
 
-<section id="content" class="p-5">
-<div class="container">
-    <div class="row">
-
+<div id="content" class="p-5">
         <aside class="sidebar">
-        <div id="departament-navegador">
+            <div id="departament-navegador">
             <!--  Controle: navegador de departamento -->
                 <vtex.cmc:searchNavigator />
-        <!-- /Controle: navegador de departamento -->
+            <!-- /Controle: navegador de departamento -->
             
                 <div id="category-extra-filtro"></div>
             </div><!-- #departament-navegador -->          	
         </aside><!-- .sidebar -->
 
         <article id="main-content" class="mainContent">
-                                                            
+        
+            <section>
             <div class="title-category">
                 <!--  Controle: Titulo -->
                 <vtex.cmc:searchTitle />
@@ -65,8 +63,16 @@
                     <!--  /Controle: Resultado da busca / Lista de produtos -->
                 </div><!-- .collection-wrap -->
             </div><!-- #collections -->
-        
+        </section>
+                                                    
         </article><!-- #main-content -->
+</div>
+
+<section id="content" class="p-5">
+<div class="container">
+    <div class="row">
+
+
 
     </div><!-- .row -->
 </div>  

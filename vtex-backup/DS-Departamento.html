@@ -36,49 +36,46 @@
 </nav>
 </div>
 
-<section id="content" class="p-5">
-<div class="container">
-    <div class="row">
-
-        <aside class="sidebar">
-        <div id="departament-navegador">
-            <!--  Controle: navegador de departamento -->
-        <vtex.cmc:singleDepartmentNavigator />
-        <!-- /Controle: navegador de departamento -->
-            
-                <div id="departament-extra-menu"></div>
-            </div><!-- #departament-navegador -->          	
-        </aside><!-- .sidebar -->
+<div id="content" class="p-5">
+    <aside class="sidebar">
+        <section id="departament-navegador">
+        <!--  Controle: navegador de departamento -->
+    <vtex.cmc:singleDepartmentNavigator />
+    <!-- /Controle: navegador de departamento -->
+        
+            <div id="departament-extra-menu"></div>
+        </section><!-- #departament-navegador -->          	
+    </aside><!-- .sidebar -->
 
         <article id="main-content" class="mainContent">
-                                                            
-            <div class="title-category">
-                <!--  Controle: Titulo -->
-                <vtex.cmc:searchTitle />
-                <!-- /Controle: Titulo -->
-            </div><!-- .title-category -->
+                  
+            <section>
+                <div class="title-category">
+                    <!--  Controle: Titulo -->
+                    <vtex.cmc:searchTitle />
+                    <!-- /Controle: Titulo -->
+                </div><!-- .title-category -->
                 
-            <div id="collections">
-                
-                <div class="collection-wrap">
-                    <vtex.cmc:searchResult layout="ef3fcb99-de72-4251-aa57-71fe5b6e149f" itemCount="12"     columnCount="3" />
-                </div>
-                
-                <div class="showcase-default">
-                    <vtex:contentPlaceHolder id="Destaques" />
-                </div>
-                
-                <div class="showcase-default">
-                    <vtex:contentPlaceHolder id="Lançamentos" />   
-                </div>
-
-            </div><!-- #collections -->
+                <div id="collections">
+                    
+                    <div class="collection-wrap">
+                        <vtex.cmc:searchResult layout="85e23371-f0a2-43c2-a6ac-e5464c462fb3" itemCount="12"     columnCount="3" />
+                    </div>
+                    
+    <!--                <div class="showcase-default">
+                        <vtex:contentPlaceHolder id="Destaques" />
+                    </div>
+                    
+                    <div class="showcase-default">
+                        <vtex:contentPlaceHolder id="Lançamentos" />   
+                    </div>
+    -->
+    
+                </div><!-- #collections -->
+            </section>                                          
         
         </article><!-- #main-content -->
-
-    </div><!-- .row -->
-</div>
-</section><!-- #content -->
+</div><!-- #content -->
 
     <vtex:template id="DS-Sub-Footer" />
 </body>
