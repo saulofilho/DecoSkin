@@ -175,8 +175,8 @@ hr {
 h5 {
   font-size: 1rem !important;
 }
-/* MINI CART */
-#mini-cart-admake {
+/* MINI CART - CARRINHO */
+ul.cont-car {
   font-family: 'Nunito', sans-serif !important;
   background-color: #F7F2EE;
   border: 2px solid #2EA2CC;
@@ -184,118 +184,73 @@ h5 {
   box-shadow: 0 -5px 15px #D0D0D0;
   display: none;
   position: absolute;
-  top: 34px;
-  right: 15px;
-  width: 320px;
+  top: 30px;
+  right: 10%;
+  width: auto;
+  height: auto;
   z-index: 9999;
 }
-.col-mini-cart:hover #mini-cart-admake {
-  display: block ! important;
+.mini-c-div, .amount-c {
+  padding: 1rem;
 }
-#mini-cart-admake:before {
-  border: 5px solid transparent;
-  border-bottom-color: #fff;
+.amount-c {
+  font-size: 0.8rem;
+  border-top: 2px solid #39C6B3;
+  border-bottom: 2px solid #39C6B3;
+}
+.amount-c-div {
+  padding: 1rem;
+}
+.mini-cart-div, .mini-c-div {
+  text-align: center;
+  padding: 1rem;
+}
+.mini-cart-div a {
+  color: white;
+  background-color: #E57B3E;
+  border-radius: 3px;
+  padding: 12px;
+}
+.mini-cart-botao {
+  padding: 1rem;
+}
+.cart-div:hover ul.cont-car {
   display: block;
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: 30px;
 }
-#mini-cart-admake .mini-cart-itens {
+ul.cont-car li {
   display: block;
-  width: 100%;
 }
-#mini-cart-admake .mini-cart-item {
-  border-bottom: 1px solid #CCC;
-  display: block;
-  padding: 15px;
-  position: relative;
+div.v2-vtexsc-cart.vtexsc-cart.mouseActivated.preLoaded {
+  overflow: inherit !important;
+  display: block !important;
 }
-#mini-cart-admake .mini-cart-item:after {
-  display: block;
-  clear: both;
-  content: "";
+td.cartSkuName {
+  display: none;
 }
-#mini-cart-admake .mini-cart-item.item-0 {
-  border-top: 0 none;
+.text {
+  display: inline !important;
 }
-#mini-cart-admake .mini-cart-item .imagem {
-  width: 80px;
+.cartFooter {
+  padding: 1rem;
+}
+.vtexsc-text {
+  font-size: 1.5rem;
+}
+.vtexsc-productList thead tr {
+  display: inline-block;
+}
+.vtexsc-productList tbody tr {
+  display: inline-block;
   float: left;
 }
-#mini-cart-admake .mini-cart-item .imagem img {
-  max-width: 100%;
+.vtexsc-productList thead tr th {
+  padding: 1rem;
 }
-#mini-cart-admake .mini-cart-item .detalhes {
-  overflow: hidden;
-  display: block;
+.vtexsc-productList tbody tr td {
+  padding: 1.5rem;
 }
-#mini-cart-admake .mini-cart-item .nome-produto {
-  margin: 0;
-}
-#mini-cart-admake .mini-cart-item .nome-produto a {
-  color: #333;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 17px;
-  padding: 5px 0;
-  margin: 0;
-  display: block;
-}
-#mini-cart-admake .mini-cart-item .qtd-valor {
-  display: block;
-  text-align: left;
-}
-#mini-cart-admake .mini-cart-item .qtd-valor .qtd {
-  font-family: 'Nunito', sans-serif !important;
-  color: #2EA2CC;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
-#mini-cart-admake .mini-cart-item .qtd-valor .preco {
-  font-family: 'Nunito', sans-serif !important;
-  color: #2EA2CC;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
-}
-#mini-cart-admake .mini-cart-footer {
-  display: block;
-  padding: 20px;
-}
-#mini-cart-admake #mini-cart-admake-total {
-  font-family: 'Nunito', sans-serif !important;
-  color: #2EA2CC;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
-}
-#mini-cart-admake .mini-cart-totais span {
-  font-family: 'Nunito', sans-serif !important;
-  color: #2EA2CC;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-}
-#mini-cart-admake .mini-cart-botao {
-  display: block;
-  margin-top: 10px;
-}
-#mini-cart-admake .mini-cart-botao .btn-finalizar-compra {
-  font-size: 20px;
-  height: 50px;
-  line-height: 25px;
-  padding: 10px;
-  background-color: #39C6B3;
-  color: #fff;
-  font-weight: 400;
-}
-#mini-cart-admake .mini-cart-botao .btn-finalizar-compra:hover {
-  opacity: 0.8;
-}
-.hidden {
-  display: none!important;
+.vtexsc-productList tbody tr span {
+  font-size: 12px;
 }
 /* CAROUSEL */
 .color-item .color {
@@ -401,7 +356,7 @@ div#form-container-teste-newsletter-bb8489354752dca8b3b3 #conversion-teste-newsl
 }
 /*DEPARTAMENTO*/
 .menu-departamento h3.peliculas {
-  font-size: 1.3rem !important;
+  font-size: 16px !important;
 }
 .menu-departamento h3.peliculas a {
   color: #2EA2CC !important;
