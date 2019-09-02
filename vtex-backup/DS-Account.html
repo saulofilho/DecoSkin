@@ -9,7 +9,6 @@
   <link rel="shortcut icon" href="/arquivos/icon.png" type="image/png" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
   <link rel="stylesheet" href="/arquivos/DS-style.css?nocache=1.0.0" />
-  <link rel="manifest" href="/arquivos/manifest.json" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link href="/arquivos/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
@@ -30,12 +29,12 @@
 <body>
     <vtex:template id="DS-Sub-Header" />
 
-<section class="sub-account p-5">
-  <div class="container">
-  <vtex.cmc:accountUserProfile />
-  <vtex.cmc:accountAddress/>
-  </div>
-</section><!-- #content -->
+    <div class="container">
+      <section class="sub-account">
+        <vtex.cmc:accountUserProfile />
+        <vtex.cmc:accountAddress/>
+      </section><!-- #content -->
+    </div>
 
     <vtex:template id="DS-Sub-Footer" />
 </body>

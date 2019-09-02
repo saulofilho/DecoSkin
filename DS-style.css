@@ -153,6 +153,9 @@ hr {
   font-size: 14px !important;
   color: #2EA2CC !important;
 }
+.pull-right {
+  color: #39C6B3;
+}
 /* FOOTER */
 .fooStyle {
   background-color: #E57B3E;
@@ -197,6 +200,8 @@ ul.cont-car {
   font-size: 0.8rem;
   border-top: 2px solid #39C6B3;
   border-bottom: 2px solid #39C6B3;
+  background-color:gray;
+  display: none !important;
 }
 .amount-c-div {
   padding: 1rem;
@@ -224,8 +229,14 @@ div.v2-vtexsc-cart.vtexsc-cart.mouseActivated.preLoaded {
   overflow: inherit !important;
   display: block !important;
 }
-td.cartSkuName {
-  display: none;
+.cartSkuName h4 {
+  font-size: 12px;
+  text-align: left;
+  width: 200px;
+  color: #2EA2CC;
+}
+.cartSkuName h4 a {
+  color: #2EA2CC;
 }
 .text {
   display: inline !important;
@@ -236,21 +247,14 @@ td.cartSkuName {
 .vtexsc-text {
   font-size: 1.5rem;
 }
-.vtexsc-productList thead tr {
-  display: inline-block;
-}
-.vtexsc-productList tbody tr {
-  display: inline-block;
-  float: left;
-}
 .vtexsc-productList thead tr th {
   padding: 1rem;
 }
-.vtexsc-productList tbody tr td {
-  padding: 1.5rem;
-}
 .vtexsc-productList tbody tr span {
   font-size: 12px;
+}
+.vtexsc-productList, .vtexsc-productList th, .vtexsc-productList td {
+  border: 2px solid #39C6B3;
 }
 /* CAROUSEL */
 .color-item .color {
@@ -572,7 +576,6 @@ a.buy-button {
   font-size: 16px;
 }
 .fontSize26 {
-  font-size: 26px !important;
   font-weight: 300 !important;
 }
 .fontSize14 {
@@ -676,6 +679,9 @@ button.vtexIdUI-others-send-email {
 span.vtexIdUI-heading {
   color: white !important;
 }
+span.flex.align-baseline.relative {
+  color: #39C6B3;
+}
 /* ORDERS */
 section.container {
   padding: 2rem;
@@ -694,6 +700,10 @@ th {
 /*CARRINHO*/
 #cart-title {
   color: red;
+}
+/*CONTATO*/
+#form-container-contato-site-a34c34a001d98d0c0e95 #conversion-contato-site-a34c34a001d98d0c0e95 section {
+  padding: none !important;
 }
 /*ZOOM*/
 .zoomPad{position:relative;float:left;z-index:99;cursor:crosshair} 
@@ -722,22 +732,19 @@ th {
   }
 }
 @media (max-width: 768px) {
-  .textOrange {
-    font-size: 5vw !important;
-  }
   .search {
     display: flex;
     align-items: center;
     margin: 0 auto;
-  }
-  .bandeiras-mobile img {
-    width: 40% !important;
   }
   div#form-container-teste-newsletter-bb8489354752dca8b3b3 #conversion-teste-newsletter-bb8489354752dca8b3b3 section {
     padding: 2rem 3rem 2rem 3rem !important;
   }
   .menu-departamento h3.peliculas {
     padding-top: 2rem !important;
+  }
+  .fulltext-search-box {
+    width: auto;
   }
 }
 /* 
