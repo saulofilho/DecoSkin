@@ -12,3 +12,6 @@ jQuery(document).ready(function($) {
 	});
 	userFeed.run();
 });
+$(document).ready(function() {
+	$(".count").text($(".vtexsc-skuQtt").length);
+ });

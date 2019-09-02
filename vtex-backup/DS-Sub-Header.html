@@ -36,6 +36,7 @@
             <ul>
               <a title="Carrinho de Compras" href="/checkout/#/cart" id="cart-hover" class="btn btn-default btn-mini-cart">
                 <i class="fa fa-shopping-cart"></i>
+                <span class="count">0</span>
               </a>
               <ul class="cont-car">
                 <li class="mini-c">
@@ -117,46 +118,3 @@ CHECKOUT HEADER
   <hr>
 </div>
 -->
-
-
-
-
-<div class="mini-cart col-mini-cart">
-    <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default btn-block iconCart">
-      <i class="icon fa fa-shopping-cart"></i>
-      <span class="count mini-cart-qty-admake">0</span>
-    </a>
-    <div id="mini-cart-admake-aux col-mini-cart" class="hidden">
-                          <vtex.cmc:miniCart />
-                          <vtex.cmc:AmountItemsInCart />    
-    </div><!-- #mini-cart-admake-aux -->
-    <div id="mini-cart-admake" style="display: none;">
-    <div class="mini-cart-header">
-    </div>
-    <div class="mini-cart-itens"><!-- recebe itens --></div>
-    <div class="mini-cart-footer">
-    <div class="mini-cart-totais"><strong id="mini-cart-admake-total" class="pull-right"><!-- recebe valor total -->
-      </strong><span>Total</span></div>
-    <div class="mini-cart-botao">
-    <a href="/checkout/#/cart" class="btn btn-block btn-verde btn-finalizar-compra">Fechar Pedido</a>
-    </div>
-    </div>
-    </div>
-  </div><!-- .mini-cart -->
-
-
-
-
-
-
-  <span class="cont-car">
-      <span class="mini-c">
-          <vtex.cmc:miniCart />
-      </span>
-      <span class="amount-c">
-          <vtex.cmc:AmountItemsInCart />
-      </span> 
-      <span class="btn-comprar">
-          <a href="/checkout/#/cart" class="btn-comprar-link">Fechar Pedido</a>
-      </span>
-  </span><!-- MINI CART HIDE -->
