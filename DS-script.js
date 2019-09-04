@@ -18,4 +18,5 @@ $(document).ready(function() {
  });
  $(document).ready(function() {
 	$(".badge").text($(".vtexsc-skuQtt").html());
+
  });
