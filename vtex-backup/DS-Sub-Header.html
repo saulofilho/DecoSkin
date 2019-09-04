@@ -1,71 +1,77 @@
 <!--HEADER NAVBAR-->
 <header class="bgColor pt-3" role="banner">
+
   <div class="container d-none d-md-block p-4">
     <div class="row">
+
       <div class="col-sm-12 col-md pb-5 pb-md-0 site-logo justify-content-center">
         <div class="site-logo">
           <a href="/">
             <img src="/arquivos/DS-logo-azul.png" style="width: 180px" alt="" />
           </a>
         </div>
-      </div>
+      </div><!--LOGO-->
 
       <div class="search col-sm-12 col-md pb-5 pb-md-0 justify-content-center mx-auto pt-2">
         <div class="row justify-content-center mx-auto">
           <vtex.cmc:fullTextSearchBox />
-          <!--CONTROLE VTEX SEARCH BOX-->
         </div>
-      </div>
+      </div><!--CONTROLE VTEX SEARCH BOX-->
 
       <div class="col-sm-12 col-md">
         <div class="row d-flex flex-row justify-content-center justify-content-md-end my-flex-container mx-auto pt-2">
+
           <div class="my-flex-item">
             <a href="/account" title="Fazer Login" class="btn btn-default btn-login">
-              <i class="icon far fa-user hidden-lg hidden-md"></i>
-              <span class="visible-lg visible-md"></span>
+              <i class="icon far fa-user"></i>
             </a>
-          </div>
+          </div><!--LOGIN-->
+
           <div class="my-flex-item">
             <a href="/account/orders" title="Meus Pedidos" class="btn btn-default btn-orders">
-              <i class="fa fa-list-alt hidden-md hidden-lg"></i>
-              <span class="visible-lg visible-md"></span>
+              <i class="fa fa-list-alt"></i>
             </a>
-          </div>
-          <div class="my-flex-item">
-              <div class="mini-cart col-mini-cart">
-                <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default btn-block iconCart">
-                  <i class="icon fa fa-shopping-cart"></i>
-                  <span class="count mini-cart-qty-admake">0</span>
-                </a>
-                <div id="mini-cart-admake-aux col-mini-cart" class="hidden">
-                                      <vtex.cmc:miniCart />
-                                      <vtex.cmc:AmountItemsInCart />    
-                </div><!-- #mini-cart-admake-aux -->
-                <div id="mini-cart-admake" style="display: none;">
-                <div class="mini-cart-header">
-                </div>
-                <div class="mini-cart-itens"><!-- recebe itens --></div>
-                <div class="mini-cart-footer">
-                <div class="mini-cart-totais"><strong id="mini-cart-admake-total" class="pull-right"><!-- recebe valor total -->
-                  </strong><span>Total</span></div>
-                <div class="mini-cart-botao">
-                <a href="/checkout/#/cart" class="btn btn-block btn-verde btn-finalizar-compra">Fechar Pedido</a>
-                </div>
-                </div>
-                </div>
-              </div><!-- .mini-cart -->
-          </div>
+          </div><!--ORDERS-->
+
+          <div class="my-flex-item cart-div">
+            <ul>
+              <a title="Carrinho de Compras" href="/checkout/#/cart" id="cart-hover" class="btn btn-default btn-mini-cart">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="count">0</span>
+              </a>
+              <ul class="cont-car">
+                <li class="mini-c">
+                  <div class="mini-c-div">
+                    <vtex.cmc:miniCart />
+                  </div>
+                </li>
+                <li class="amount-c">
+                  <div class="amount-c-div">
+                    <vtex.cmc:AmountItemsInCart />
+                  </div>
+                </li>
+                <li class="mini-cart-botao">
+                  <div class="mini-cart-div">
+                    <a href="/checkout/#/cart" class="btn-comprar-link">Fechar Pedido</a>
+                  </div>
+                </li>
+              </ul>
+            </ul>
+          </div><!--CART ICONE-->
+
         </div>
-      </div>
+      </div><!--LOGIN ORDER CHECKOUT-->
+
     </div>
-  </div>
+  </div><!--NAVBAR DESKTOP-->
+
   <div class="d-none d-md-block">
       <hr class="mb-0" />
-  </div>
-  <!--NAVBAR-->
+  </div><!--GREEN LINE-->
+
   <div class="container bgColor">
     <nav class="navbar navbar-expand-md navbar-light bgColor">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="/arquivos/DS-logo-azul.png" style="width: 180px" alt="" class="d-md-none" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -74,22 +80,35 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <div class="mx-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item pt-5 pt-md-0 d-md-none">
+              <a class="nav-link" href="/account">Fazer login</a>
+            </li>
+            <li class="nav-item pt-2 pt-md-0 d-md-none">
+              <a class="nav-link" href="/account/orders">Meus pedidos</a>
+            </li>
+            <li class="nav-item pt-2 pt-md-0 d-md-none">
+              <a class="nav-link" href="/checkout/#/cart">Carrinho de compras</a>
+              <span class="badge">0</span>
+            </li>
+            <li class="nav-item pt-2 pt-md-0 d-md-none">
+              <a class="nav-link" href="/contato">Contato</a>
+            </li>
+          </ul>
         <vtex.cmc:departmentNavigator/>
         </div>
       </div>
 
     </nav>
-  </div>
-
+  </div><!--NAVBAR MOBILE-->
   <div class="search col-sm-12 col-md pb-5 pb-md-0 justify-content-center mx-auto p-5 d-md-none">
     <div class="row">
       <vtex.cmc:fullTextSearchBox />
       <!--CONTROLE VTEX SEARCH BOX-->
     </div>
-  </div>
+  </div><!--SEARCH BOX-->
 
 </header>
-
 
 <!--
 CHECKOUT HEADER
