@@ -38,107 +38,100 @@
 
   <div class="container">
     <div class="row">
-        
       <div class="product-image col-lg-6">
-            <!--  Component: Product Images -->
+            <div class="prod-img">
               <vtex.cmc:ProductImage zoom="on"/>
+            </div><!--  Component: Product Images -->
+            <div class="face">
               <vtex.cmc:facebookLike />
+            </div>
       </div><!-- .product-image -->
-    
-    <!--
-    <div class="product-name-mobile">
-            <div class="product-name">
-                <div id="brand">
-                    <vtex.cmc:brandName/>
-                </div>
-                <vtex.cmc:productName />
-            </div>
-            <div class="row">
-              <div class="codigo-produto">
-                <span>Cód:</span> <vtex.cmc:skuReference/>
-              </div>
-              <div class="col-xs-12">
-                <div class="avaliacoes">
-                    <a href="#reviews" class="link-ancora">
-                        <vtex.cmc:evaluationRate/>
-                    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-    -->      
-    
-        <div class="product-info col-lg-6">
-    
-            <div class="product-name">
-                <div id="brand">
-                    <vtex.cmc:brandName/>
-                </div>
-                <div id="nome-produto-h1">
-                    <h1>
-                        <vtex.cmc:productName />
-                    </h1>
-                </div>
-            </div>
-    
-            <div class="codigo-produto">
-              <span>Cód:</span> <vtex.cmc:skuReference/>
-            </div>
-    
-            <div class="price-box">
-              <!--  Component: Sellers 
-              <vtex.cmc:SellerOptions />
-              <vtex.cmc:sellerDescription />
-              -->
-    
-              <!--  Component: Price -->
-              <vtex.cmc:skuPrice />
-            
-              <!--  Component: Sales channels 
-              <vtex.cmc:SalesChannelDropList />
-              -->
-            
-              <!--  Component: Addicional services -->
-              <vtex.cmc:stockKeepingUnitService />
-              
-              <!--  Component: Payment methods -->
-              <!-- <vtex.cmc:OtherPaymentMethod/> -->
-            </div><!-- .price-box -->
-    
-            <div class="seletor-sku">
-              <!-- unit selection 
-              <vtex.cmc:stockKeepingUnitSelection />
-              -->
 
-              <vtex.cmc:stockKeepingUnitAmountAndUnitSelection />
-              <!-- unit and amount selection -->
-            </div><!-- .seletor-sku -->
-    
-            <div class="buy-button-box">
-              <!-- buy button -->
+      <div class="product-info col-lg-6">
+          <div class="product-name">
+              <div id="brand">
+                <h4>
+                  <vtex.cmc:brandName/>
+                </h4>
+              </div>
+              <div id="nome-produto-h1">
+                  <h1>
+                      <vtex.cmc:productName />
+                  </h1>
+              </div>
+          </div>
+  
+          <div class="codigo-produto">
+            <span>Cód: </span> <vtex.cmc:skuReference/>
+          </div>
+  
+          <div class="price-box">
+            <div class="prod-preco">
+              <vtex.cmc:skuPrice />
+            </div><!--  Component: Price -->
+
+            <div class="add-serv">
+              <vtex.cmc:stockKeepingUnitService />
+            </div><!--  Component: Addicional services -->
+            
+            <!--  Component: Sellers 
+            <vtex.cmc:SellerOptions />
+            <vtex.cmc:sellerDescription />
+            -->
+  
+            <!--  Component: Sales channels 
+            <vtex.cmc:SalesChannelDropList />
+            -->
+          
+            <!--  Component: Payment methods -->
+            <!-- <vtex.cmc:OtherPaymentMethod/> -->
+          </div><!-- .price-box -->
+  
+          <div class="seletor-sku">
+            <!-- unit selection 
+            <vtex.cmc:stockKeepingUnitSelection />
+            -->
+
+            <vtex.cmc:stockKeepingUnitAmountAndUnitSelection />
+            <!-- unit and amount selection -->
+          </div><!-- .seletor-sku -->
+  
+          <div class="buy-button-box">
+            <div class="buy-but">
               <vtex.cmc:BuyButton />
-    
-              <!-- buy in page -->
+            </div><!-- buy button -->
+            
+            <div class="buy-page">
               <vtex.cmc:BuyInPage/>
-            </div><!-- .buy-button-box -->
-    
-            <div class="shipping-box">
+            </div><!-- buy in page -->
+          </div><!-- .buy-button-box -->
+  
+          <div class="shipping-box">
+            <div class="ship-val">
               <vtex.cmc:shippingValue />
-              <script type="text/javascript">
-                $(document).ready( function(){
-                  ShippingValue();
-                });
-              </script>
+            </div><!-- shipping value -->
+            <div class="deli">
               <vtex.cmc:Delivery/>
-            </div>
-    
-        </div><!-- .product-info -->
+            </div><!-- delivery -->              
+          </div>
+  
+      </div><!-- .product-info -->
     </div>
 
   </div><!-- .product-details -->
 
-  <div class="p-5 desc-infos-rev">
+  <div class="container desc-infos-rev">
+
+      <div class="btn-group" role="group" aria-label="menu-anchor">
+          <a href="#description" class="btn btn-default">Descrição do Produto</a>
+          <a href="#specification" class="btn btn-default">Especificações do Produto</a>
+          <a href="#reviews" class="btn btn-default">Avaliações</a>
+      </div>
+
     <div class="desc">
+      <h2>
+        Descrição
+      </h2>
       <vtex.cmc:ProductDescription/>
     </div>
     <div class="infos">

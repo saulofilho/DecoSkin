@@ -12,6 +12,11 @@ jQuery(document).ready(function($) {
 	});
 	userFeed.run();
 });
+
 $(document).ready(function() {
-	$(".count").text($(".vtexsc-skuQtt").length);
+	$(".count").text($(".vtexsc-skuQtt").html());
+ });
+ $(document).ready(function() {
+	$(".badge").text($(".vtexsc-skuQtt").html());
+
  });

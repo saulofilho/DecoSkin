@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="DS-style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="manifest" href="manifest.json" />
   <script src="https://kit.fontawesome.com/53f27d6075.js"></script>
   <!--Start of Zendesk Chat Script-->
   <script type="text/javascript">
@@ -171,9 +172,6 @@
                 <a class="dropdown-item" href="#">Iwill</a>
               </div>
             </li>
-            <!-- <li class="nav-item pt-2 pt-md-0">
-              <a class="nav-link" href="/contato.html">Contato</a>
-            </li> -->
           </ul>
           <vtex.cmc:departmentNavigator/>
         </div>
@@ -197,210 +195,243 @@
 
 </header>
 
-<!--CAROUSEL-->
-<div class="carousel">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="./imgs/1.png" alt="1 slide" />
-        <div class="carousel-caption pb-0 pb-md-5">
-          <h2 class="text-right">DecoSkin</h2>
-          <p class="text-right pb-0 pb-md-5 mb-0">Proteção que conecta seu estilo!</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./imgs/2.png" alt="2 slide" />
-        <div class="carousel-caption pb-0 pb-md-5">
-          <h2 class="text-left">Coleção <br />Anti-impacto</h2>
-          <p class="text-left pb-0 pb-md-5 mb-0">Dupla proteção para o seu aparelho.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./imgs/3.png" alt="3 slide" />
-        <div class="carousel-caption pb-0 pb-md-5">
-          <h2 class="text-right">Frete grátis?</h2>
-          <p class="text-right pb-0 pb-md-5 mb-0">Eu ouvi frete grátis?</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./imgs/4.png" alt="4 slide" />
-        <div class="carousel-caption pb-0 pb-md-5">
-          <h2 class="text-right">Coleção USH</h2>
-          <p class="text-right pb-0 pb-md-5 mb-0">Produtos Swarovski pra você brilhar de verdade. <br /> Revendedor exclusivo.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./imgs/5.png" alt="5slide" />
-        <div class="carousel-caption pb-0 pb-md-5">
-          <h2 class="text-left">Acessórios</h2>
-          <p class="text-left pb-0 pb-md-5 mb-0">Turbine seu celular! <br />
-            Acessórios para deixar seu aparelho ainda mais funcional!</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./imgs/6.png" alt="6 slide" />
-        <div class="carousel-caption pb-0 pb-md-5">
-          <h2 class="text-right">Tech!</h2>
-          <p class="text-right pb-0 pb-md-5 mb-0">Escolha o acessório de áudio ou <br /> vídeo que completa sua experiência.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./imgs/7.png" alt="7 slide" />
-        <div class="carousel-caption pb-0 pb-md-5">
-          <h2 class="text-right">DecoSkin</h2>
-          <p class="text-right pb-0 pb-md-5 mb-0">Proteção que conecta seu estilho!</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!--PRIMEIRO DESTAQUE ESQUERDA-->
 <div class="p-5">
-  <div class="container">
-  <div class="row justify-content-center mb-5">
-    <div class="col-md-12 text-center pt-4">
-      <h2 class="textOrange">Mais vendidos</h2>
-    </div>
-  </div>
-  <div class="row align-items-center">
-    <div class="col-md-12 col-lg-7 mb-5">
-      <a href="/produto.html">
-        <img src="./imgs/destaque-1-frete-gratis.png" alt="Image placeholder"
-          class="img-fluid rounded w-75 mx-auto d-block" />
-      </a>
-    </div>
-    <div class="col-md-12 col-lg-5 pl-md-5 text-center text-lg-left ">
-      <h2 class="textBlue fontSize26">Coleção capas de TPU</h2>
-      <p class="textGray">Capa não pode ser qualquer coisa. As nossas são feitas com poliuretano (TPU), material
-        maleável e muito
-        resistente, deixando seu aparelho mega protegido.
-      </p>
-      <div class="text-center">
-        <a href="produto.html">
-          <button type="button" class="btn btn-default float-lg-left btn-sm btnOrange">COMPRE AGORA</button>
-        </a>
+    <div class="container">
+        <div class="row details_row">
+    
+          <!-- Product Image -->
+          <div class="col-lg-6">
+            <div class="details_image">
+              <div class="details_image_large"><img src="./imgs/TPU-sereia.jpg" alt=""/></div>
+              <div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
+                <div class="details_image_thumbnail active" data-image="./imgs/TPU-sereia.jpg"><img
+                    src="./imgs/TPU-sereia.jpg" alt=""/></div>
+                <div class="details_image_thumbnail" data-image="./imgs/USH-mandalas.jpg"><img
+                    src="./imgs/TPU-sereia.jpg" alt=""/></div>
+                <div class="details_image_thumbnail" data-image="./imgs/TPU-sereia.jpg"><img
+                    src="./imgs/TPU-sereia.jpg" alt=""/></div>
+                <div class="details_image_thumbnail" data-image="./imgs/TPU-sereia.jpg"><img
+                    src="./imgs/TPU-sereia.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Product Content -->
+          <div class="col-lg-6 product-details pl-md-5 mb-2">
+            <h3>Coleção USH</h3>
+            <p class="price"><span>R$ 80,00</span></p>
+            <p>Nossos produtos são os únicos feitos com cristais Swarovski originais, aplicados manualmente um a um, com
+              todo cuidado e carinho. Garantindo um acabamento impecável!
+              Essa garantia e qualidade você só encontra com quem é revendedor exclusivo Swarovski.
+            </p>
+            <div class="form-row mt-4">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Marca</label>
+                  <div class="select-wrap">
+                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                    <select name="" id="" class="form-control">
+                      <option value="">Apple</option>
+                      <option value="">Samsung</option>
+                      <option value="">LG</option>
+                      <option value="">Nokia</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Modelo</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>iPhone 6</option>
+                    <option>iPhone 7</option>
+                    <option>iPhone 8</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+    
+            <div class="form__row">
+                <label class="product-section-title">
+                Cor
+                <span class="required">*</span>
+                </label>
+                <div class="input-box input-colorpicker">
+                <ul class="gocase-colorpicker">
+                <li class="active"><span style="background-color: #ff0000" data-value="ff0000"></span></li>
+                <li><span style="background-color: #15ff00" data-value="15ff00"></span></li>
+                <li><span style="background-color: #0936ff" data-value="0936ff"></span></li>
+                </ul>
+                <input type="hidden" name="customizations[23824]" id="customizations_23824" value="92666d" class="color-value customization-field" data-code="color"/>
+                </div>
+                </div>
+    
+            <p>
+              <a href="carrinho.html" class="btn btn-primary btn-block py-3 px-5 mt-5">Comprar</a>
+            </p>
+    
+          </div>
+        </div>
+          <!--DESCRIÇÃO, INFOS E REVIEW-->
+      <div class="container paddTop">
+        <div class="row mt-5">
+          <div class="col-md-12 nav-link-wrap">
+            <div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link ftco-animate active mr-lg-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1"
+                role="tab" aria-controls="v-pills-1" aria-selected="true">Descrição</a>
+    
+              <a class="nav-link ftco-animate mr-lg-1" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+                aria-controls="v-pills-2" aria-selected="false">Infos Técnicas</a>
+    
+              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+                aria-controls="v-pills-3" aria-selected="false">Reviews</a>
+    
+            </div>
+          </div>
+          <div class="col-md-12 tab-wrap">
+    
+            <div class="tab-content bg-light" id="v-pills-tabContent">
+    
+              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+                <div class="p-4">
+                  <h3 class="mb-4">Coleção USH:</h3>
+                  <p>
+                    Nossos produtos são os únicos feitos com cristais Swarovski originais, aplicados manualmente um a um,
+                    com todo cuidado e carinho. Garantindo um acabamento impecável!
+                    Essa garantia e qualidade você só encontra com quem é revendedor exclusivo Swarovski.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+                <div class="p-4">
+                  <h3 class="mb-4">Blá.</h3>
+                  <p>Blá.</p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+                    <div class="row p-4">
+                        <div class="col-md-7">
+                          <div class="review">
+                            <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                            <div class="desc">
+                              <h4>
+                                <span class="text-left">Fulano</span>
+                              </h4>
+                              <p>Acervo com mais de 18 mil imagens ou sua imagem personalizada: fotos ou logotipo da empresa.
+                                Temos sempre uma idéia
+                                exclusiva para você. Capinhas Personalizadas em 40 minutos.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="review">
+                            <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                            <div class="desc">
+                              <h4>
+                                <span class="text-left">Ciclano</span>
+                              </h4>
+                              <p>Acervo com mais de 18 mil imagens ou sua imagem personalizada: fotos ou logotipo da empresa.
+                                Temos sempre uma idéia
+                                exclusiva para você. Capinhas Personalizadas em 40 minutos.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="review">
+                            <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                            <div class="desc">
+                              <h4>
+                                <span class="text-left">Beltrano</span>
+                              </h4>
+                              <p>Acervo com mais de 18 mil imagens ou sua imagem personalizada: fotos ou logotipo da empresa.
+                                Temos sempre uma idéia
+                                exclusiva para você. Capinhas Personalizadas em 40 minutos.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="rating-wrap">
+                              <div class="review_box">
+                                <h4>Seu review</h4>
+                                <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
+                                  novalidate="novalidate">
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" id="name" name="name" placeholder="Nome Completo"/>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <input type="email" class="form-control" id="email" name="email" placeholder="Email"/>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <textarea class="form-control" name="message" id="message" rows="1"
+                                        placeholder="Review"></textarea>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12 text-right">
+                                    <button type="submit" value="submit" class="btn submit_btn">
+                                      Enviar
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!--MENU ROW NOVIDADES-->
+      <div class="container paddTop">
+        <div class="row justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2>Aproveite e compre também:</h2>
+          </div>
+        </div>
+        <div class="row paddTop">
+          <!-- Produto -->
+          <div class="product col-md-4 col-sm-6 col-xs-12">
+            <a href="produto.html">
+              <div class="product_image"><img src="./imgs/USH-mandalas.jpg" alt=""/></div>
+            </a>
+            <div class="product_content">
+              <div class="product_title"><a href="produto.html">Case TPU Sereia</a></div>
+              <div class="product_price">R$ 25,00</div>
+              <div class="product_text"></div>
+            </div>
+          </div>
+          <!-- Produto -->
+          <div class="product col-md-4 col-sm-6 col-xs-12">
+            <a href="produto.html">
+              <div class="product_image"><img src="./imgs/USH-mandalas.jpg" alt=""/></div>
+            </a>
+            <div class="product_content">
+              <div class="product_title"><a href="produto.html">Case TPU Sereia</a></div>
+              <div class="product_price">R$ 25,00</div>
+              <div class="product_text"></div>
+            </div>
+          </div>
+          <!-- Produto -->
+          <div class="product col-md-4 col-sm-6 col-xs-12">
+            <a href="produto.html">
+              <div class="product_image"><img src="./imgs/USH-mandalas.jpg" alt=""/></div>
+            </a>
+            <div class="product_content">
+              <div class="product_title"><a href="produto.html">Case TPU Sereia</a></div>
+              <div class="product_price">R$ 25,00</div>
+              <div class="product_text"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-</div>
-
-<!--SEGUNDO DESTAQUE DIREITA-->
-<div class="p-5">
-  <div class="container">
-  <div class="row justify-content-center mb-5">
-    <div class="col-md-12 text-center pt-4">
-      <h2 class="textOrange greenLine pt-5">Acabou de chegar</h2>
-    </div>
-  </div>
-  <div class="row align-items-center flex-column-reverse flex-lg-row">
-    <div class="col-md-12 col-lg-5 pl-md-5 text-center text-lg-right">
-      <h2 class="textBlue fontSize26">Coleção USH</h2>
-      <p class="textGray">Nossos produtos são os únicos feitos com cristais Swarovski originais, aplicados
-        manualmente um a um, com
-        todo cuidado e carinho. Garantindo um acabamento impecável!
-        Essa garantia e qualidade você só encontra com quem é revendedor exclusivo Swarovski.
-      </p>
-      <div class="text-center">
-        <a href="produto.html">
-          <button type="button" class="btn btn-default float-lg-right btn-sm btnOrange">COMPRE AGORA</button>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-12 col-lg-7 mb-5">
-      <a href="produto.html">
-        <img src="./imgs/destaque-2-ush.png" alt="Image placeholder"
-          class="img-fluid rounded w-75 mx-auto d-block" /></a>
-    </div>
-  </div>
-  </div>
-</div>
-
-<hr />
-
-<!--CERTIFICADO, FOCO, EXPERIENCIA-->
-<div class="p-5">
-  <div class="container">
-  <div class="row">
-    <div class="col-md-12 col-lg-4 d-lg-flex mb-5 pt-5 mb-md-0 pt-md-0">
-        <div class="text">
-          <span class="icon far fa-gem iconStyle d-flex justify-content-center pb-4"></span>
-          <h2 class="text-center textBlue fontSize26">Certificação Swarovski</h2>
-          <p class="text-center textGray">Somos a única marca do segmento homologada pela Swarovski para utilizar
-            cristais originais na criação dos produtos.</p>
-        </div>
-    </div>
-    <div class="col-md-12 col-lg-4 d-lg-flex mb-5 pt-5 mb-md-0 pt-md-0">
-        <div class="text">
-          <span class="icon fas fa-globe iconStyle d-flex justify-content-center pb-4"></span>
-          <h2 class="text-center textBlue fontSize26">Foco em conectividade</h2>
-          <p class="text-center textGray">A Deco Skin está focada em oferecer soluções para facilitar seu dia a
-            dia e te conectar com o mundo.</p>
-        </div>
-    </div>
-    <div class="col-md-12 col-lg-4 d-lg-flex mb-5 pt-5 mb-md-0 pt-md-0">
-        <div class="text">
-          <span class="icon far fa-grin-stars iconStyle d-flex justify-content-center pb-4"></span>
-          <h2 class="text-center textBlue fontSize26">Experiência garantida</h2>
-          <p class="text-center textGray">Desde 2011 criamos soluções inovadoras para quem busca acessórios de
-            tecnologia. São 08 anos de história e mais de 50 lojas espalhadas pelo Brasil.</p>
-        </div>
-    </div>
-  </div>
-  </div>
-</div>
-
-<hr />
- 
-<!--INSTAFEED-->
-<div class="p-5">
-  <h1 id="insta-text" class="text-center">Instafeed</h1>
-  <div class="container">
-  <div class="row">
-    <div id="instafeed">
-    </div>
-  </div>
-  </div>
-</div>
-
-<!--FIRST FORM NEWSLETTER-->
-<!-- <div class="d-flex justify-content-center" id="formColor">
-    <form action="">
-      <h2 class="formTextNews text-center pb-3 pt-5">Fique por dentro das nossas novidades</h2>
-      <div class="form-row">
-        <div class="form-group col-md-8">
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
-        </div>
-        <div class="form-group col-md-4">
-          <button type="button" class="btn btnOrange col-xs-8 col-md-12 col-form-label">Cadastrar</button>
-        </div>
-      </div>
-      <p class="usoStyle text-center pt-3 pb-5">Ao clicar em Cadastrar, você estará aceitando automaticamente nossos <a
-        href="#" data-toggle="modal" data-target="#bannermodalTermos" class="smoothscroll">Termos de
-        Uso</a>.</p>
-    </form>
-</div> -->
-
-<!--FORM NEWSLETTER RDSM-->
-<div role="main" id="teste-newsletter-bb8489354752dca8b3b3"></div>
-<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
-<script type="text/javascript">
-  new RDStationForms('teste-newsletter-bb8489354752dca8b3b3-html', 'UA-145477607-1').createForm();
-</script>
-<div class="pb-3 cardGreen">
-  <p class="text-center px-5 usoStyle">
-    Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.
-  </p>
-</div>
+</div><!--PRODUTO-->
 
 <!--FOOTER-->
 <div class="p-5 fooStyle">
@@ -416,7 +447,6 @@
       </div>
       <div class="col-12 col-md-3">
         <ul class="list-unstyled">
-          <li><a href="/contato.html">Fale conosco</a></li>
           <li><a href="/suporte.html">Dúvidas frequentes</a></li>
           <li><a href="#">Seja um franqueado</a></li>
         </ul>
