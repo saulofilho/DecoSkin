@@ -375,14 +375,45 @@ div#form-container-teste-newsletter-bb8489354752dca8b3b3 #conversion-teste-newsl
   font-size: 16px !important;
   margin-right: 10px;
 }
+.bgColor .menu-departamento h3 a {
+  color: #2EA2CC;
+}
 .bgColor .menu-departamento ul {
   margin-bottom: 0 !important;
 }
-.menu-departamento h3 a {
+aside.sidebar {
+  float: left;
+  width: 15%;
+  margin-right: 1rem;
+}
+aside .menu-departamento h3 {
+  font-size: 1.3rem;
+}
+aside .menu-departamento ul li a {
+  font-size: 0.8rem;
+  color: gray;
+  margin-left: 10px;
+}
+aside .menu-departamento h2 {
+  font-size: 2rem;
+}
+aside .menu-departamento h3 {
+  font-size: 1.75rem;
+}
+aside .menu-departamento h4 {
+  font-size: 1.5rem;
+}
+aside .menu-departamento h5 {
+  font-size: 1rem;
+}
+aside .menu-departamento h3 a {
   color: #2EA2CC !important;
 }
-article .title-category h2 {
-  font-size: 2.5rem;
+aside .menu-departamento h4 a {
+  color: #39C6B3 !important;
+}
+article h2 {
+  font-size: 2rem;
   color: #E57B3E;
 }
 .resultado-busca-filtro {
@@ -398,17 +429,14 @@ article .title-category h2 {
   appearance: none;
   color: #2EA2CC !important;
   border: 1px solid #39C6B3;
+  border-radius: 5px;
+  background-color: #F7F2EE;
 }
 #content {
   display: flex;
 }
 .compare {
   display: none;
-}
-aside.sidebar {
-  float: left;
-  width: 15%;
-  margin-right: 1rem;
 }
 #main-content {
   width: 85%;
@@ -463,16 +491,10 @@ aside.sidebar {
 p.flag {
   display: none;
 }
-.navigation .menu-departamento h3 {
-  font-size: 1.3rem;
-}
-.navigation .menu-departamento ul li a {
-  font-size: 0.8rem;
-  color: gray;
+/*CATEGORIA*/
+.main fieldset {
   margin-left: 10px;
 }
-
-/*CATEGORIA*/
 .navigation-tabs {
   font-size: 10px;
 }
@@ -532,6 +554,9 @@ p.flag {
 .best-price, .installment {
   color: #2EA2CC;
   font-size: 1rem;
+}
+.resultado-busca-filtro {
+  align-items: flex-end;
 }
 /* CORES */
 .colorWhite {
@@ -719,9 +744,6 @@ th {
   div#form-container-teste-newsletter-bb8489354752dca8b3b3 #conversion-teste-newsletter-bb8489354752dca8b3b3 section {
     padding: 2rem 3rem 2rem 3rem !important;
   }
-  .menu-departamento h3.peliculas {
-    padding-top: 2rem !important;
-  }
   .fulltext-search-box {
     width: 250px;
   }
@@ -731,6 +753,9 @@ th {
   .bgColor .menu-departamento h3 {
     font-size: 16px !important;
     padding: 15px 0 0 0;
+  }
+  .bgColor .menu-departamento h3 a {
+    color: #2EA2CC;
   }
   #content {
     padding: 1rem !important; 
@@ -756,6 +781,9 @@ th {
   article .title-category h2 {
     font-size: 2rem;
     text-align: center;
+  }
+  img.rounded.mx-auto.d-block {
+    width: 100%;
   }
 }
 /* 
