@@ -1,0 +1,58 @@
+// Font Family
+$nunito: "Nunito", sans-serif;
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+@mixin transition($time) {
+  transition: all $time ease-in-out;
+}
+
+.icon {
+  font-size: 20px;
+}
+i {
+  color: #2ea2cc;
+}
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #e99a6d !important;
+}
+li {
+  list-style-type: none;
+}
+hr {
+  border: 1px solid #39c6b3 !important;
+}
+.iconStyle {
+  font-size: 36px;
+  color: #e57b3e;
+  text-align: center;
+}
+.iconStyleW {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+.chat-style {
+  color: #39c6b3 !important;
+}
+.chat-style span {
+  font-size: 36px;
+}
+.usoStyle {
+  color: white;
+  font-size: 12px;
+}
+.usoStyle a {
+  color: white;
+}
+
+#ajaxBusy,
+.modal-backdrop {
+  display: none !important;
+}

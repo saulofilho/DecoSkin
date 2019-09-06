@@ -1,0 +1,36 @@
+// Breakpoints
+@mixin d($device) {
+  @if $device == xs {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $device == sm {
+    @media (min-width: 576px) {
+      @content;
+    }
+  } @else if $device == smMax {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $device == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $device == mdMax {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $device == lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $device == lgMax {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $device == xl {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

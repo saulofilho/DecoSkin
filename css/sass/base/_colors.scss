@@ -1,0 +1,53 @@
+// Colors Brand
+$blue: #2ea2cc;
+$green: #39c6b3;
+$orange: #e57b3e;
+
+// Colors Text
+$black: #000000;
+$gray: #717d84;
+$dark-gray: #373435;
+
+// Color UI
+$white: #ffffff;
+$silver: #f4f4f3;
+$cream: #f7f2ee;
+
+// Colors Suport
+$error: #e4573f;
+$warning: #e6a03c;
+
+// Colors Site
+.colorWhite {
+  color: $white;
+}
+.textBlue {
+  color: $blue;
+}
+.textGreen {
+  color: $green;
+}
+.textOrange {
+  color: $orange;
+  font-weight: 800;
+}
+.textGray {
+  color: $gray;
+  font-size: 16px;
+}
+.fontSize26 {
+  font-weight: 300 !important;
+}
+.fontSize14 {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: $orange;
+}
+button.btnOrange {
+  background-color: $orange !important;
+  color: $white !important;
+}
+
+#cart-title {
+  color: red;
+}

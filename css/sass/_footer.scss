@@ -1,0 +1,27 @@
+.fooStyle {
+  background-color: #e57b3e;
+
+  .list-unstyled {
+    color: $white;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        color: $white;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+.faixaFooterWhite {
+  background-color: $white;
+
+  h5 {
+    font-size: 1rem !important;
+  }
+}

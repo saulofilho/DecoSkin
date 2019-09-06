@@ -1,0 +1,57 @@
+.bg-breadcrumb {
+  padding: 10px 0;
+
+  .bread-crumb {
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        margin: 5px;
+
+        &::after {
+          content: "/";
+          color: $blue;
+        }
+
+        a {
+          color: $blue;
+          padding: 0 5px;
+          position: relative;
+          margin-right: 15px;
+
+          &::after {
+            border-bottom: 1px solid $blue;
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 0;
+            bottom: -5px;
+            left: 0%;
+            background-color: #ffffff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          }
+
+          &:hover {
+            text-decoration: none;
+
+            &::after {
+              width: 100%;
+              right: 0;
+            }
+          }
+        }
+      }
+
+      .last {
+        &::after {
+          display: none;
+        }
+
+        a {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
