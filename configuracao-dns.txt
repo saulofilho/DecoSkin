@@ -1,0 +1,26 @@
+Configurar registros CAA
+
+A configuração adequada desses registros é necessária para que seja possível gerar os certificados SSL e usar a CDN da VTEX. Esses certificados são fundamentais para que sua loja possa usar a CDN da VTEX e ter uma performance superior.
+
+Em geral, o que você precisa fazer é conferir se os registros CAA contém as seguintes entradas:
+
+domain.com. CAA 0 issue "letsencrypt.org"
+domain.com. CAA 0 issue "comodoca.com"
+domain.com. CAA 0 issue "digicert.com"
+domain.com. CAA 0 issue "globalsign.com"
+
+Isso significa que as autoridades certificadoras Let’s Encrypt, Comodo, Digicert e Globalsign podem emitir certificados para o domínio decoskin.com. Não há conflito caso seja necessário autorizar alguma outra autoridade certificadora. O importante é que essas quatro estejam autorizadas.
+
+Apontamento de DNS
+Endereço da loja: www.decoskin.com
+- Entrada (subdomínio): www
+- Tipo: CNAME
+- Destino: www.decoskin.com.cdn.vtex.com
+
+Configurar acesso sem www e redirecionamento
+
+Exemplo: de decoskin.com para www.decoskin.com
+
+- Crie um registro do tipo A para a raíz do domínio (pode ser representada por ., @ ou apenas decoskin.com) apontando para 52.8.174.221 (IP da Direcionar);
+
+- Crie um registro do tipo CNAME de redirect (ou “redirect.meusite.com”) apontando para www.decoskin.com.opts-uri.direcionar.com.br.

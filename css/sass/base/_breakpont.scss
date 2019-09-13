@@ -32,5 +32,9 @@
     @media (min-width: 1200px) {
       @content;
     }
+  } @else if $device == xlMax {
+    @media (max-width: 1200px) {
+      @content;
+    }
   }
 }

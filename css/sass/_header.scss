@@ -18,7 +18,6 @@
   .header-top {
     background-color: $silver;
     border-bottom: 4px solid $green;
-    padding: 20px 0;
   }
 
   @include d(lgMax) {
@@ -97,8 +96,8 @@
 
     .logo {
       .icon-logo {
-        width: 254px;
-        height: 70px;
+        width: 200px;
+        height: 56px;
         fill: $blue;
       }
 
@@ -175,7 +174,7 @@
       }
 
       .icon-searh {
-        fill: $orange;
+        fill: $blue;
         margin-left: 10px;
       }
     }
@@ -213,9 +212,114 @@
       display: flex;
       align-items: flex-end;
 
+      .favorite {
+        display: none;
+      }
+
       .favorite,
       .cart {
         margin-right: 20px;
+      }
+
+      .cart {
+        #miniC {
+          background: #ffffff none repeat scroll 0 0;
+          border: 1px solid #bbb;
+          display: none;
+          position: absolute;
+          top: 68px;
+          z-index: 999;
+          min-width: 460px;
+          right: 0px;
+
+          .cartSkuUnitPrice {
+            font-weight: 700;
+          }
+
+          p {
+            font-size: 14px;
+            color: #444;
+            text-align: center;
+
+            b {
+              display: block;
+              font-size: 34px;
+              color: #666;
+              margin: 10px 0 5px;
+            }
+
+            span {
+              font-size: 14px;
+              color: #666;
+            }
+
+            a {
+              display: block;
+              height: 52px;
+              line-height: 53px;
+              text-align: center;
+              border: 2px solid #0091d8;
+              color: #0091d8;
+              margin-top: 25px;
+              font-size: 18px;
+              position: relative;
+              transition: all 0.35s ease;
+
+              &:hover {
+                background-color: #0091d8;
+                color: white;
+
+                &::after {
+                  margin-left: 15px;
+                  background: url(/arquivos/arrow-right.png) no-repeat;
+                  opacity: 1;
+                  filter: invert(100%);
+                }
+              }
+
+              &::after {
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 15px;
+                position: relative;
+                background: url("/arquivos/charrow.png") no-repeat;
+                top: 3px;
+                margin-left: 10px;
+                opacity: 0.5;
+                transition: all 0.35s ease;
+              }
+            }
+          }
+        }
+
+        .amout-cart {
+          .cart-info {
+            .amount-products,
+            .amount-kits,
+            .total-cart,
+            legend {
+              display: none;
+            }
+            .amount-items {
+              strong {
+                display: none !important;
+              }
+            }
+
+            .busca {
+              select {
+                display: none;
+              }
+            }
+
+            .gt-busca {
+              label {
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -230,7 +334,7 @@
   @include d(lg) {
     .header-bottom {
       background-color: $silver;
-      padding: 20px 0;
+      padding: 5px 0;
     }
   }
 
@@ -394,6 +498,10 @@
 
           &.submenu-acessorios {
             width: 172px;
+          }
+
+          &.submenu-seguros {
+            width: 143px;
           }
 
           .column-list {

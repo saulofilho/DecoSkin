@@ -25,4 +25,23 @@
       ativaSubmenuMobile(index);
     });
   });
+
+  // /*minicart fix*/
+  // var mini_Cart = function() {
+  //   $("th.cartSkuQuantity").html("Qtd");
+  //   $(".cartFooter a.cartCheckout").html("Finalizar pedido");
+  //   var strQtd = $(".cart-info:eq(0) .amount-items-em").text();
+  //   var numQtd = parseInt(strQtd);
+  //   var pluQtd = "itens";
+  //   if (numQtd == 1) {
+  //     pluQtd = "item";
+  //   }
+
+  //   if (numQtd == 0) {
+  //     $(".vtexsc-cart").html(
+  //       '<p class="mini-cart-vazio"><b>Ops!</b><span>Seu carrinho de compras está vazio.</span><a href="/">Ir às compras</a></p>'
+  //     );
+  //     $(".top-link.compras").addClass("top-cart-ativo");
+  //   }
+  // };
 }
