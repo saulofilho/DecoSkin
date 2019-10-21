@@ -1,0 +1,146 @@
+/*CATEGORIA*/
+.main fieldset {
+  margin-left: 10px;
+}
+.navigation-tabs {
+  font-size: 10px;
+}
+.product-image {
+  background: #F8F8F8;
+  border-radius: 5px;
+}
+.product-image img {
+  background: #F8F8F8;
+  border-radius: 5px;
+}
+.product-name {
+  margin: 1rem 1rem 0 1rem;
+  float: left;
+  clear: both;
+}
+.product-name a {
+  font-size: 16px;
+  color: #717D84;
+}
+.price {
+  margin: 1rem 1rem 0 1rem;
+  float: left;
+  clear: both;
+}
+.add {
+  margin: 1rem 1rem 1rem 0;
+  float: right;
+}
+.add a {
+  font-size: 18px;
+  color: #E57B3E !important;
+}
+.menu-navegue {
+  display: flex;
+  padding-bottom: 20px;
+  flex-flow: column;
+}
+.menu-navegue a {
+  background-color: #E57B3E;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  width: 120px;
+  text-align: center;
+}
+.search-single-navigator ul li {
+  color: gray;
+  font-size: 0.8rem;
+}
+.search-single-navigator ul a {
+  color: gray;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+.prateleira ul {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 2rem;
+}
+.prateleira ul li {
+  margin: 0 10px 10px 0;
+  background: #F4F4F3;
+  border-radius: 5px;
+  flex: 0;
+}
+.best-price, 
+.installment {
+  color: #2EA2CC;
+  font-size: 1rem;
+}
+.resultado-busca-filtro {
+  align-items: flex-end;
+}
+
+/* MOBILE */
+@media (max-width: 1000px) {
+  aside.sidebar {
+    display: none !important;
+  }
+  .fulltext-search-box {
+    width: 200px;
+}
+}
+@media (max-width: 768px) {
+  .search {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  div#form-container-teste-newsletter-bb8489354752dca8b3b3 #conversion-teste-newsletter-bb8489354752dca8b3b3 section {
+    padding: 2rem 3rem 2rem 3rem !important;
+  }
+  .fulltext-search-box {
+    width: 250px;
+  }
+  .bgColor .menu-departamento {
+    display: block;
+  }
+  .bgColor .menu-departamento h3 {
+    font-size: 16px !important;
+    padding: 15px 0 0 0;
+  }
+  .bgColor .menu-departamento h3 a {
+    color: #2EA2CC;
+  }
+  #content {
+    padding: 1rem !important; 
+  }
+  .product-image, 
+  .product-name, 
+  .price, 
+  .add {
+  display: flex;
+  }
+  .prateleira ul li {
+    margin: 10px;
+    flex: 1 40%;
+  }
+  .prateleira ul li span.box-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .add a {
+    font-size: 1rem !important;
+    color: #E57B3E !important;
+    margin: 0 auto;
+  }
+  #main-content {
+    width: 100%;
+    float: left;
+  }
+  article .title-category h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  img.rounded.mx-auto.d-block {
+    width: 100%;
+  }
+}

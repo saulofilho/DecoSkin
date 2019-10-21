@@ -44,7 +44,7 @@ hr {
 .usoStyle a {
   color: white;
 }
-/* NAVBAR 
+/* NAVBAR */
 .navbar-nav.navbar-center {
   position: absolute;
   left: 50%;
@@ -127,8 +127,6 @@ input[type="button"] {
   background-color: #E57B3E !important;
   margin-left: 10px !important;
 }
-*/
-
 /* BREADCRUMB */
 .breadcrumbStyle .breadcrumb {
   background-color: white !important;
@@ -460,12 +458,6 @@ p.flag {
 .navigation-tabs {
   font-size: 10px;
 }
-.product-image, 
-.product-name, 
-.price, 
-.add {
-  display: flex;
-}
 .product-image {
   background: #F8F8F8;
   border-radius: 5px;
@@ -476,14 +468,17 @@ p.flag {
 }
 .product-name {
   margin: 1rem 1rem 0 1rem;
+  float: left;
+  clear: both;
 }
 .product-name a {
-  font-size: 12px;
+  font-size: 16px;
   color: #717D84;
 }
 .price {
   margin: 1rem 1rem 0 1rem;
   float: left;
+  clear: both;
 }
 .add {
   margin: 1rem 1rem 1rem 0;
@@ -519,13 +514,14 @@ p.flag {
 }
 .prateleira ul {
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row wrap;
   margin-bottom: 2rem;
 }
 .prateleira ul li {
   margin: 0 10px 10px 0;
   background: #F4F4F3;
   border-radius: 5px;
+  flex: 0;
 }
 .best-price, 
 .installment {
@@ -737,9 +733,15 @@ th {
   #content {
     padding: 1rem !important; 
   }
+  .product-image, 
+  .product-name, 
+  .price, 
+  .add {
+  display: flex;
+  }
   .prateleira ul li {
-    width: 45%;
     margin: 10px;
+    flex: 1 40%;
   }
   .prateleira ul li span.box-item img {
     width: 100%;
